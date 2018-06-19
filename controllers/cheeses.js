@@ -1,7 +1,7 @@
 const cheeseModel = require('../models/cheese');
 
 const index = () => {
-  logModel.index()
+  cheeseModel.index()
   .then( result => { res.json(result);})
   .catch(error => { console.error(error); });
 }
