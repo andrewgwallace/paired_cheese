@@ -9,7 +9,7 @@ const index = () => {
 
 const show = log_id => {
   return knex('cheeses') 
-    .where('id', log_id)
+    .where('id', cheese_id)
     .then(rows => rows[0])
     .catch(error => { console.error(error); })
 }
