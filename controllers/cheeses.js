@@ -1,6 +1,6 @@
 const cheeseModel = require('../models/cheese');
 
-const index = () => {
+const index = (req, res) => {
   cheeseModel.index()
   .then( result => { res.json(result);})
   .catch(error => { console.error(error); });
