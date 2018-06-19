@@ -7,7 +7,7 @@ const index = () => {
     .catch(error => { console.error(error); }); 
 }
 
-const show = log_id => {
+const show = cheese_id => {
   return knex('cheeses') 
     .where('id', cheese_id)
     .then(rows => rows[0])
